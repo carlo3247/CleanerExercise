@@ -2,7 +2,7 @@
 This repository is an implementation of the [java exercise from marshmallow](https://github.com/marshmallow-insurance/java-backend-test).
 
 # Solution
-The code for the solution can be accessed under `exercise/src/main/java/com/example/exercise`. The entry point for the web server is the `Application.java` file. To solve the task a `Navigator.java` object is created, which navigates an `Area.java`.
+The code for the solution can be accessed under [exercise/src/main/java/com/example/exercise](https://github.com/carlo3247/CleanerExercise/tree/master/exercise/src/main/java/com/example/exercise). The entry point for the web server is the [Application.java](https://github.com/carlo3247/CleanerExercise/blob/master/exercise/src/main/java/com/example/exercise/Application.java) file. To solve the task a [Navigator.java](https://github.com/carlo3247/CleanerExercise/blob/master/exercise/src/main/java/com/example/exercise/Navigator.java) object is created, which navigates an [Area.java](https://github.com/carlo3247/CleanerExercise/blob/master/exercise/src/main/java/com/example/exercise/Area.java).
 
 # Installation/Run
 To run the project navigate into the `exercise` folder. Then, the development server can be started with the command shown below. The server is listening to port `8080`.

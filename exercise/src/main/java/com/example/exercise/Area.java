@@ -9,7 +9,7 @@ public class Area {
 
     public Area(int boundsX, int boundsY, int currentPositionX, int currentPositionY) {
         if (boundsX < 1 || boundsY < 1) {
-            throw new IllegalArgumentException("Bounds have to be positive integers.");
+            throw new IllegalArgumentException("Area size bounds have to be positive integers.");
         }
         this.bounds = new Coordinates(boundsX, boundsY);
         this.currentPosition = createCoordinates(currentPositionX, currentPositionY);
@@ -35,7 +35,7 @@ public class Area {
         }
         if ((this.currentPosition.x < 0 || this.currentPosition.x > this.bounds.x)
                 || (this.currentPosition.y < 0 || this.currentPosition.y > this.bounds.y)) {
-            throw new RuntimeException("Navigated out of bounds.");
+            throw new IllegalStateException("Navigated out of bounds.");
         }
     }
 

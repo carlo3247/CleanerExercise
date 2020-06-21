@@ -30,6 +30,8 @@ public class Application {
 			List<Integer> currentPosition = exercise.getCurrentPosition();
 			Output output = new Output(cleanedPatches, currentPosition);
 			return new ResponseEntity<Output>(output, HttpStatus.OK);
+		} catch (NullPointerException e) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Missing field in JSON.", e);
 		} catch (IllegalArgumentException e) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage(), e);
 		} catch (IllegalStateException e) {

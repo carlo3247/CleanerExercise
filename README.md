@@ -1,17 +1,17 @@
-# Problem
+## Problem
 This repository is an implementation of the [java exercise from marshmallow](https://github.com/marshmallow-insurance/java-backend-test).
 
-# Solution
+## Solution
 The code for the solution can be accessed under [exercise/src/main/java/com/example/exercise](https://github.com/carlo3247/CleanerExercise/tree/master/exercise/src/main/java/com/example/exercise). The entry point for the web server is the [Application.java](https://github.com/carlo3247/CleanerExercise/blob/master/exercise/src/main/java/com/example/exercise/Application.java) file. To solve the task a [Navigator.java](https://github.com/carlo3247/CleanerExercise/blob/master/exercise/src/main/java/com/example/exercise/Navigator.java) object is created, which navigates an [Area.java](https://github.com/carlo3247/CleanerExercise/blob/master/exercise/src/main/java/com/example/exercise/Area.java).
 
-# Installation/Run
+## Installation/Run
 To run the project navigate into the `exercise` folder. Then, the development server can be started with the command shown below. The server is listening to port `8080`.
 ```bash
 cd exercise
 ./mvnw spring-boot:run
 ```
 
-# Example
+## Example
 With the server up and running a JSON payload can be sent to the server.
 ```JSON
 {
